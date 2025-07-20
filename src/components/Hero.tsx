@@ -28,10 +28,15 @@ const Hero: FC = () => {
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-violet-700 hover:to-purple-700 transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg shadow-violet-500/25">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-violet-700 hover:to-purple-700 transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg shadow-violet-500/25"
+              >
                 <Download size={20} />
                 Resume
-              </button>
+              </a>
               <button 
                 onClick={scrollToContact}
                 className="border border-violet-600 text-violet-300 px-8 py-3 rounded-full hover:bg-violet-600/20 hover:text-violet-200 transition-all duration-300 flex items-center justify-center gap-2"
