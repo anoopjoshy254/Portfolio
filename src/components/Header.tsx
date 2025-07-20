@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import FadeInSection from "./FadeInSection"; // ✅ relative path
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Brand Name */}
           <div className="text-2xl font-bold text-white">
+            
             ANOOP<span className="text-violet-400"></span>
           </div>
 

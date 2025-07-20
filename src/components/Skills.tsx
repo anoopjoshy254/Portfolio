@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Code, Server, Wrench, Heart } from 'lucide-react';
 
 const Skills: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState('soft');
+  const [activeCategory, setActiveCategory] = useState('frontend');
 
   const categories = [
     { id: 'frontend', label: 'Frontend', icon: Code },

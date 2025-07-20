@@ -8,19 +8,44 @@ import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FadeInSection from './components/FadeInSection';
 
 function App() {
   return (
     <div className="min-h-screen bg-black">
       <Header />
+      
+      <FadeInSection>
       <Hero />
-      <Tools />
-      <Skills />
-      <Education />
-      <Projects />
-       <Experience />
-      <Achievements />
-      <Contact />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Tools />
+        </FadeInSection>
+
+        <FadeInSection>
+        <Skills />
+        </FadeInSection>
+
+      <FadeInSection>
+        <Education />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Projects />
+         </FadeInSection>
+
+          <FadeInSection>
+        <Experience />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Achievements />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
       <Footer />
     </div>
   );
